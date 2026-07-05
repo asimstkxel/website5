@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' https://images.unsplash.com data:; frame-src https://www.googletagmanager.com; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';" />
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -65,7 +66,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <!-- Quick search bar -->
-    <form class="hero-search" onsubmit="event.preventDefault(); document.getElementById('listings').scrollIntoView({behavior:'smooth'});">
+    <form class="hero-search" id="heroSearch">
       <div class="field">
         <label>Property Type</label>
         <select>
@@ -499,7 +500,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </ul>
     </div>
 
-    <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you! We will be in touch shortly.'); this.reset();">
+    <form class="contact-form" id="contactForm">
       <div class="row">
         <div class="field"><label>Full Name</label><input type="text" required placeholder="Your name" /></div>
         <div class="field"><label>Phone</label><input type="tel" required placeholder="Phone number" /></div>

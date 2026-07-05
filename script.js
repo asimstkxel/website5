@@ -13,6 +13,25 @@ navLinks.querySelectorAll('a').forEach(a =>
   a.addEventListener('click', () => navLinks.classList.remove('open'))
 );
 
+// Hero search form
+const heroSearch = document.getElementById('heroSearch');
+if (heroSearch) {
+  heroSearch.addEventListener('submit', (e) => {
+    e.preventDefault();
+    document.getElementById('listings').scrollIntoView({ behavior: 'smooth' });
+  });
+}
+
+// Contact form
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('Thank you! We will be in touch shortly.');
+    e.target.reset();
+  });
+}
+
 // Property filter tabs
 const tabs = document.querySelectorAll('#filterTabs .tab');
 const cards = document.querySelectorAll('#propertyGrid .property-card');
