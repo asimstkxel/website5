@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "skills": {
+    "backend-development": {
+      "source": "skillcreatorai/ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/backend-development/SKILL.md",
+      "computedHash": "d560e827fb8fadebf13b62ab2927de2331f13b047d5c271eab0471f318c2e1c0"
+    },
+    "business-analyst": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "skillPath": "skills/business-analyst/SKILL.md",
+      "computedHash": "2e69edc526936d87889f56ce50795a664797f1feb478fa548056587b69bb3615"
+    },
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/SKILL.md",
+      "computedHash": "4eabc66183767153e404b39d1b839b1c37f2d82d86f0a0d7e880a579d8d62336"
+    }
+  }
+}
